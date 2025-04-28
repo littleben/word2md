@@ -1,70 +1,55 @@
-# TabMagnet - New Tab Position Controller
+# Word to Markdown Converter (Word2MD)
 
-Chrome extension for configuring new tab positions in browser windows with multilingual support.
+[![Website](https://img.shields.io/badge/Website-Word2MD.net-blue.svg)](https://www.word2md.net/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) <!-- You can add or modify the License based on your actual situation -->
 
-## Key Features
-- Customizable new tab positions:
-  - Right side of current tab (default)
-  - Left side of current tab 
-  - Far left in window
-  - Far right in window (browser default)
-- Multilingual interface (English/Chinese/Japanese)
-- Automatic preference saving
-- Responsive options page
+Easily convert Word documents (.docx) into clean, structured Markdown files.
 
-## Project Structure
-TabMagnet/
-├── _locales/
-│   ├── en/                 # English locale
-│   ├── zh_CN/              # Simplified Chinese
-│   └── ja/                 # Japanese locale
-├── images/                 # Extension icons
-├── background.js           # Background logic
-├── manifest.json           # Extension manifest  
-├── options.html            # Options page
-├── options.css             # Options page styles
-└── options.js              # Options page logic
+## About The Project
 
-## Installation
-```bash
-# Load unpacked extension
-1. Open Chrome extensions page: chrome://extensions/
-2. Enable "Developer mode"
-3. Click "Load unpacked"
-4. Select this repository directory
+This project includes two parts:
 
-## Localization Support
-Available languages:
+1.  **Word2MD.net Website**: An online tool that allows you to quickly and securely convert Word documents to Markdown right in your browser <mcreference link="https://www.word2md.net/" index="0">0</mcreference>.
+2.  **Chrome Extension**: (Coming Soon) Integrates the conversion functionality directly into your Chrome browser for a more convenient experience.
 
-- English (en)
-- Simplified Chinese (zh_CN)
-- Japanese (ja)
+## Key Features ✨
 
-How to switch languages:
-1. Click extension icon in toolbar
-2. Select language from dropdown
-3. Interface updates immediately
+*   **🚀 Fast & Efficient**: Utilizes modern libraries (Mammoth.js, Turndown) for rapid conversion <mcreference link="https://www.word2md.net/" index="0">0</mcreference>.
+*   **📄 Clean Output**: Generates well-structured, easy-to-read Markdown code.
+*   **🔒 Privacy Focused**: All conversions happen entirely locally in your browser. Your files are never uploaded to any server, ensuring your data privacy <mcreference link="https://www.word2md.net/" index="0">0</mcreference>.
+*   **💻 Cross-Platform**: The website is accessible on any modern browser, and the extension is designed for Chrome.
+*   **🆓 Completely Free**: Both the website and the extension are free to use.
 
-## Technical Details
-- Chrome Manifest V3 compliant
-- Uses <mcsymbol name="chrome.tabs.onCreated" filename="background.js" path="/Users/ben/Next Tab/TabMagnet/background.js" startline="1" type="function"></mcsymbol> for tab creation events
-- Syncs settings via <mcsymbol name="chrome.storage.sync" filename="options.js" path="/Users/ben/Next Tab/TabMagnet/options.js" startline="3" type="function"></mcsymbol>
-- Responsive layout (min-width: 300px)
+## Why Choose Word2MD?
+
+Unlike some older conversion tools, Word2MD is a modern solution focused on providing a more accurate and reliable .docx to Markdown conversion experience <mcreference link="https://www.word2md.net/" index="0">0</mcreference>. We prioritize simplicity and user privacy.
+
+## How to Use
+
+### Website (Word2MD.net)
+
+1.  Visit <mcurl name="Word2MD.net" url="https://www.word2md.net/"></mcurl> <mcreference link="https://www.word2md.net/" index="0">0</mcreference>.
+2.  Click the "Upload Word Document (.docx)" button to select your .docx file <mcreference link="https://www.word2md.net/" index="0">0</mcreference>.
+3.  The converted Markdown will automatically appear in the text area.
+4.  You can click "Copy Markdown" to copy the content or "Download .md File" to download the file.
+
+### Chrome Extension (Coming Soon)
+
+*   After installing the extension, click the extension icon in your browser toolbar.
+*   Upload your .docx file in the popup window.
+*   The conversion result will be displayed directly in the popup, ready for copying or downloading.
+*   (Stay tuned for the extension release!)
+
+## Tech Stack
+
+*   **Core Conversion**: [Mammoth.js](https://github.com/mwilliamson/mammoth.js) (Extract Word content), [Turndown](https://github.com/mixmark-io/turndown) (HTML to Markdown) <mcreference link="https://www.word2md.net/" index="0">0</mcreference>
+*   **Frontend**: HTML, CSS, JavaScript
+*   **Chrome Extension**: Manifest V3, Chrome APIs
 
 ## Contributing
-Welcome contributions via Issues:
-- New translations (update `_locales/` directory)
-- Feature requests
-- Bug reports
+
+Contributions are welcome! Please feel free to submit issues or pull requests.
 
 ## License
-MIT License
 
-```plaintext
-
-Key Implementation Notes:
-1. Localization based on `_locales/` directory structure
-2. Core logic in `background.js`
-3. Options page uses `flex` layout (see `options.css`)
-
-Recommended to include extension screenshot at `images/screenshot.png`.
+Distributed under the MIT License. See `LICENSE` for more information. (Please ensure you have a LICENSE file in your project root)
