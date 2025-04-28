@@ -1,0 +1,182 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* 使用新字体 */
+    background-color: #F8F7FF; /* 淡紫色背景 */
+    color: #1E1E3C; /* 深蓝灰色文字 */
+    min-width: 450px; /* 根据内容调整宽度 */
+    font-size: 14px;
+}
+
+/* Hero Section Styles */
+.hero {
+    padding: 40px 30px;
+    background-color: #F8F7FF; /* 与 body 背景色一致 */
+    /* 添加网格背景 */
+    background-image:
+        linear-gradient(to right, rgba(214, 210, 255, 0.3) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(214, 210, 255, 0.3) 1px, transparent 1px);
+    background-size: 20px 20px; /* 网格大小 */
+}
+
+.hero-title {
+    font-size: 2.8em; /* 增大字体 */
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #1E1E3C;
+}
+
+.hero-title .highlight {
+    color: #7B61FF; /* 紫色高亮 */
+}
+
+.hero-description {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #5A5A7D; /* 稍浅的灰色 */
+    max-width: 500px; /* 限制描述宽度 */
+}
+
+/* Main Content Area */
+.main-content {
+    padding: 30px;
+}
+
+/* Converter Section Styles */
+.converter-section {
+    background-color: #FFFFFF; /* 白色背景 */
+    padding: 25px;
+    border-radius: 12px; /* 圆角 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* 添加细微阴影 */
+    margin-bottom: 20px;
+}
+
+.converter-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1E1E3C;
+}
+
+.converter-subtitle {
+    font-size: 0.95em;
+    color: #5A5A7D;
+    margin-bottom: 20px;
+}
+
+/* File Input Styles */
+.file-input-label {
+    display: flex; /* 使用 flex 布局 */
+    justify-content: space-between; /* 两端对齐 */
+    align-items: center;
+    padding: 12px 15px;
+    border: 1px solid #D6D2FF; /* 淡紫色边框 */
+    border-radius: 8px;
+    background-color: #F8F7FF; /* 非常淡的紫色背景 */
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    margin-bottom: 15px;
+}
+
+.file-input-label:hover {
+    background-color: #EDE9FF;
+    border-color: #B8A9FF;
+}
+
+.file-input-label span:first-child { /* "Upload Word Document" 文本 */
+    font-weight: 500;
+    color: #333;
+}
+
+.file-name { /* 文件名显示区域 */
+    font-size: 0.9em;
+    color: #5A5A7D;
+    background-color: #fff; /* 白色背景强调 */
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.privacy-note {
+    font-size: 0.85em;
+    color: #8A8AA8; /* 更浅的灰色 */
+    text-align: center;
+}
+
+/* Output Section Styles (保持基本样式，可微调) */
+#outputContainer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #EAEAF5; /* 淡紫色分隔线 */
+}
+
+#outputContainer h2 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+textarea#markdownOutput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #D6D2FF;
+    border-radius: 8px;
+    resize: vertical;
+    min-height: 180px; /* 增加最小高度 */
+    background-color: #fff;
+    font-family: monospace;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Button Styles */
+.button-group {
+    display: flex;
+    gap: 15px; /* 增大按钮间距 */
+    margin-top: 15px;
+}
+
+button {
+    flex-grow: 1; /* 让按钮平分空间 */
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #7B61FF; /* 主题紫色 */
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #6A50E0; /* 深一点的紫色 */
+}
+
+button:disabled {
+    background-color: #C0C0D8; /* 灰色禁用状态 */
+    cursor: not-allowed;
+}
+
+/* Status Message Styles */
+#status {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #4CAF50; /* 保持绿色成功状态 */
+    min-height: 1.2em;
+    text-align: center;
+    font-weight: 500;
+}
+
+#status.error {
+    color: #F44336; /* 保持红色错误状态 */
+}

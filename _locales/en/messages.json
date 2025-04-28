@@ -1,0 +1,78 @@
+{
+  "extName": {
+    "message": "Word to Markdown Converter",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "Convert Word documents (.docx) to Markdown.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Word to Markdown Converter",
+    "description": "Popup window title"
+  },
+  "outputHeading": {
+    "message": "Markdown Output:",
+    "description": "Heading for the output area"
+  },
+  "copyButtonText": {
+    "message": "Copy Markdown",
+    "description": "Text for the copy button"
+  },
+  "downloadButtonText": {
+    "message": "Download .md File",
+    "description": "Text for the download button"
+  },
+  "statusSelectFile": {
+    "message": "Please select a .docx file.",
+    "description": "Status: Incorrect file type selected"
+  },
+  "statusConverting": {
+    "message": "Converting...",
+    "description": "Status: Conversion in progress"
+  },
+  "statusSuccess": {
+    "message": "Conversion successful!",
+    "description": "Status: Conversion completed successfully"
+  },
+  "statusReadFileError": {
+    "message": "Error reading file.",
+    "description": "Status: Error reading the selected file"
+  },
+  "statusConversionError": {
+    "message": "Error: $errorMessage$",
+    "description": "Status: Conversion failed (with message)",
+    "placeholders": {
+      "errorMessage": {
+        "content": "$1",
+        "example": "Document is corrupted"
+      }
+    }
+  },
+  "statusCopySuccess": {
+    "message": "Markdown copied to clipboard!",
+    "description": "Status: Copy successful"
+  },
+  "statusCopyError": {
+    "message": "Failed to copy Markdown.",
+    "description": "Status: Copy failed"
+  },
+  "statusDownloadStarted": {
+    "message": "Markdown file download initiated.",
+    "description": "Status: Download started"
+  },
+  "statusUnknownError": {
+    "message": "An unknown error occurred during conversion.",
+    "description": "Status: Generic conversion error"
+  },
+  "fileInputLabel": {
+    "message": "Select Word file (.docx):",
+    "description": "Label for the file input (optional in HTML)"
+  },
+  "heroTitle": { "message": "Easily Convert Word to Clean <span class=\"highlight\">Markdown</span>" },
+"heroDescription": { "message": "Quickly transform Word (.docx) documents into clean, structured Markdown files - right in your browser, with no data uploaded. Fast, secure, and reliable." },
+"converterSubtitle": { "message": "Upload your .docx file below to instantly convert it into clean Markdown format." },
+"uploadButtonLabel": { "message": "Upload Word Document (.docx)" },
+"initialFileName": { "message": "No file chosen" },
+"privacyNote": { "message": "All processing is done locally. Your files stay private." }
+}

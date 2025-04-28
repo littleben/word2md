@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Title will be set by JS -->
+    <title>Word to Markdown</title>
+    <link rel="stylesheet" href="popup.css">
+    <!-- 可以考虑引入一个更现代的字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <!-- Use data-i18n attribute -->
+        <h2 class="hero-title" data-i18n="heroTitle">__MSG_heroTitle__</h2>
+        <p class="hero-description" data-i18n="heroDescription">__MSG_heroDescription__</p>
+    </div>
+
+    <div class="main-content">
+        <div class="converter-section">
+            <p class="converter-subtitle" data-i18n="converterSubtitle">__MSG_converterSubtitle__</p>
+            <label for="fileInput" class="file-input-label">
+                <!-- Use data-i18n attribute -->
+                <span data-i18n="uploadButtonLabel">__MSG_uploadButtonLabel__</span>
+                <!-- File name span will be updated by JS -->
+                <span id="fileName" class="file-name">__MSG_initialFileName__</span>
+            </label>
+            <input type="file" id="fileInput" accept=".docx" style="display: none;">
+            <p class="privacy-note" data-i18n="privacyNote">__MSG_privacyNote__</p>
+        </div>
+
+        <div id="outputContainer" style="display: none;">
+            <!-- Use data-i18n attribute -->
+            <h2 data-i18n="outputHeading">__MSG_outputHeading__</h2>
+            <textarea id="markdownOutput" rows="10" readonly></textarea>
+            <div class="button-group">
+                <!-- Use data-i18n attribute -->
+                <button id="copyButton" data-i18n="copyButtonText">__MSG_copyButtonText__</button>
+                <button id="downloadButton" data-i18n="downloadButtonText">__MSG_downloadButtonText__</button>
+            </div>
+        </div>
+        <div id="status"></div>
+    </div>
+
+    <!-- 引入 mammoth.js 库 -->
+    <script src="lib/mammoth.browser.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

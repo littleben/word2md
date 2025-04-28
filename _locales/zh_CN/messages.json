@@ -1,0 +1,78 @@
+{
+  "extName": {
+    "message": "Word 转 Markdown 转换器",
+    "description": "扩展程序名称"
+  },
+  "extDesc": {
+    "message": "将 Word 文档 (.docx) 转换为 Markdown。",
+    "description": "扩展程序描述"
+  },
+  "popupTitle": {
+    "message": "Word 转 Markdown 转换器",
+    "description": "弹出窗口标题"
+  },
+  "outputHeading": {
+    "message": "Markdown 输出：",
+    "description": "输出区域的标题"
+  },
+  "copyButtonText": {
+    "message": "复制 Markdown",
+    "description": "复制按钮文本"
+  },
+  "downloadButtonText": {
+    "message": "下载 .md 文件",
+    "description": "下载按钮文本"
+  },
+  "statusSelectFile": {
+    "message": "请选择 .docx 文件。",
+    "description": "状态：选择了不正确的文件类型"
+  },
+  "statusConverting": {
+    "message": "转换中...",
+    "description": "状态：正在进行转换"
+  },
+  "statusSuccess": {
+    "message": "转换成功！",
+    "description": "状态：转换成功完成"
+  },
+  "statusReadFileError": {
+    "message": "读取文件错误。",
+    "description": "状态：读取所选文件时出错"
+  },
+  "statusConversionError": {
+    "message": "错误：$errorMessage$",
+    "description": "状态：转换失败（附带消息）",
+    "placeholders": {
+      "errorMessage": {
+        "content": "$1",
+        "example": "文档已损坏"
+      }
+    }
+  },
+  "statusCopySuccess": {
+    "message": "Markdown 已复制到剪贴板！",
+    "description": "状态：复制成功"
+  },
+  "statusCopyError": {
+    "message": "复制 Markdown 失败。",
+    "description": "状态：复制失败"
+  },
+  "statusDownloadStarted": {
+    "message": "Markdown 文件下载已开始。",
+    "description": "状态：下载已开始"
+  },
+  "statusUnknownError": {
+    "message": "转换过程中发生未知错误。",
+    "description": "状态：通用转换错误"
+  },
+  "fileInputLabel": {
+    "message": "选择 Word 文件 (.docx)：",
+    "description": "文件输入的标签（HTML 中可选）"
+  },
+  "heroTitle": { "message": "轻松将 Word 转换为简洁的 <span class=\"highlight\">Markdown</span>" },
+"heroDescription": { "message": "快速将 Word (.docx) 文档转换为干净、结构化的 Markdown 文件 - 直接在您的浏览器中完成，无需上传任何数据。快速、安全、可靠。" },
+"converterSubtitle": { "message": "在下方上传您的 .docx 文件，即可将其即时转换为干净的 Markdown 格式。" },
+"uploadButtonLabel": { "message": "上传 Word 文档 (.docx)" },
+"initialFileName": { "message": "未选择任何文件" },
+"privacyNote": { "message": "所有处理均在本地完成。您的文件将保持私密。" }
+}
