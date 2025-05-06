@@ -46,6 +46,9 @@ Unlike some older conversion tools, Word2MD is a modern solution focused on prov
 *   **Frontend**: HTML, CSS, JavaScript
 *   **Chrome Extension**: Manifest V3, Chrome APIs
 
+## refer
+https://tq5n93g77p.feishu.cn/docx/TwqWdRHDUosOKGxKU9CcXSZEnEf
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit issues or pull requests.
