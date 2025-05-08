@@ -38,7 +38,7 @@ Unlike some older conversion tools, Word2MD is a modern solution focused on prov
 *   After installing the extension, click the extension icon in your browser toolbar.
 *   Upload your .docx file in the popup window.
 *   The conversion result will be displayed directly in the popup, ready for copying or downloading.
-*   (Stay tuned for the extension release!)
+https://chromewebstore.google.com/detail/word-to-markdown-converte/oamaeagjgilllhafldebcploocnnpohd?authuser=0&hl=en
 
 ## Tech Stack
 
