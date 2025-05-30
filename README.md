@@ -33,18 +33,21 @@ Unlike some older conversion tools, Word2MD is a modern solution focused on prov
 3.  The converted Markdown will automatically appear in the text area.
 4.  You can click "Copy Markdown" to copy the content or "Download .md File" to download the file.
 
-### Chrome Extension (Coming Soon)
+### Chrome Extension
+https://chromewebstore.google.com/detail/word-to-markdown-converte/oamaeagjgilllhafldebcploocnnpohd?authuser=0&hl=en
 
 *   After installing the extension, click the extension icon in your browser toolbar.
 *   Upload your .docx file in the popup window.
 *   The conversion result will be displayed directly in the popup, ready for copying or downloading.
-*   (Stay tuned for the extension release!)
 
 ## Tech Stack
 
 *   **Core Conversion**: [Mammoth.js](https://github.com/mwilliamson/mammoth.js) (Extract Word content), [Turndown](https://github.com/mixmark-io/turndown) (HTML to Markdown).
 *   **Frontend**: HTML, CSS, JavaScript
 *   **Chrome Extension**: Manifest V3, Chrome APIs
+
+## refer
+https://tq5n93g77p.feishu.cn/docx/TwqWdRHDUosOKGxKU9CcXSZEnEf
 
 ## Contributing
 
