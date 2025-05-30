@@ -39,6 +39,12 @@ function localizeHtmlPage() {
 document.addEventListener('DOMContentLoaded', () => {
     localizeHtmlPage(); // Call localization function first
 
+    // 动态插入 externalTip HTML
+    const tipEl = document.getElementById('externalTip');
+    if (tipEl) {
+        tipEl.innerHTML = chrome.i18n.getMessage('externalTip');
+    }
+
     const fileInput = document.getElementById('fileInput');
     const markdownOutput = document.getElementById('markdownOutput');
     const outputContainer = document.getElementById('outputContainer');

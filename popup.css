@@ -15,7 +15,7 @@ body {
 
 /* Hero Section Styles */
 .hero {
-    padding: 40px 30px;
+    padding: 30px 30px;
     background-color: #F8F7FF; /* 与 body 背景色一致 */
     /* 添加网格背景 */
     background-image:
@@ -45,7 +45,7 @@ body {
 
 /* Main Content Area */
 .main-content {
-    padding: 30px;
+    padding: 10px;
 }
 
 /* Converter Section Styles */
@@ -179,4 +179,25 @@ button:disabled {
 
 #status.error {
     color: #F44336; /* 保持红色错误状态 */
+}
+
+.external-link-tip {
+    margin: 18px 20px 0 20px;
+    padding: 14px 18px;
+    background: #F3F0FF;
+    border: 1px solid #D6D2FF;
+    border-radius: 8px;
+    color: #5A5A7D;
+    font-size: 0.97em;
+    text-align: center;
+    line-height: 1.7;
+}
+.external-link-tip a {
+    color: #7B61FF;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.external-link-tip a:hover {
+    color: #6A50E0;
 }

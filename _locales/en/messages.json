@@ -74,5 +74,9 @@
 "converterSubtitle": { "message": "Upload your .docx file below to instantly convert it into clean Markdown format." },
 "uploadButtonLabel": { "message": "Upload Word Document (.docx)" },
 "initialFileName": { "message": "No file chosen" },
-"privacyNote": { "message": "All processing is done locally. Your files stay private." }
+"privacyNote": { "message": "All processing is done locally. Your files stay private." },
+"externalTip": {
+  "message": "Need to convert multiple Word or require advanced options? Visit <a href='https://word2md.net' target='_blank' rel='noopener noreferrer'>word2md.net</a> for batch processing.",
+  "description": "Tip for users to visit external site for batch/advanced conversion."
+}
 }

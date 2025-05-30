@@ -74,5 +74,9 @@
 "converterSubtitle": { "message": "在下方上传您的 .docx 文件，即可将其即时转换为干净的 Markdown 格式。" },
 "uploadButtonLabel": { "message": "上传 Word 文档 (.docx)" },
 "initialFileName": { "message": "未选择任何文件" },
-"privacyNote": { "message": "所有处理均在本地完成。您的文件将保持私密。" }
+"privacyNote": { "message": "所有处理均在本地完成。您的文件将保持私密。" },
+"externalTip": {
+  "message": "需要批量转换多个 Word 或需要高级选项？访问 <a href='https://word2md.net' target='_blank' rel='noopener noreferrer'>word2md.net</a> 进行批量处理。",
+  "description": "引导用户访问外部网站进行批量/高级转换的提示。"
+}
 }
