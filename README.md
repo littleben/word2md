@@ -9,7 +9,7 @@ Easily convert Word documents (.docx) into clean, structured Markdown files.
 
 This project includes two parts:
 
-1.  **[Word2MD.net](https://www.word2md.net/) Website**: An online tool that allows you to quickly and securely convert Word documents to Markdown right in your browser.
+1.  **[Word2MD.net](https://www.word2md.net/) Official Website**: An online tool that allows you to quickly and securely convert Word documents to Markdown right in your browser.
 2.  **Chrome Extension**: Integrates the conversion functionality directly into your Chrome browser for a more convenient experience.
 [Add to Chrome](https://chromewebstore.google.com/detail/word-to-markdown-converte/oamaeagjgilllhafldebcploocnnpohd?authuser=0&hl=en)
 
